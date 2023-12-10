@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>URL shortener | Shortlify</title>
+  </head>
+  <body>
+    <header>
+      <nav
+        aria-label="Primary Navigation"
+        class="navbar container flex flex-jcsb"
+      >
+        <a href="/" class="brand-logo">
+          <img src="images/logo.svg" alt="Shortlify Logo" />
+        </a>
+
+        <!-- desktop components -->
+        <div class="main-menu">
+          <ul class="links flex">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+
+          <ul class="cta flex">
+            <li><button>Login</button></li>
+            <li><button class="btn-secondary">Sign Up</button></li>
+          </ul>
+        </div>
+
+        <!-- mobile components -->
+        <button
+          class="menu-btn flex"
+          data-id="menu-btn"
+          aria-label="Toggle menu button"
+        >
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+
+        <div class="mobile-menu" data-id="mobile-menu">
+          <ul class="links">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+
+          <ul class="cta">
+            <li><button>Login</button></li>
+            <li><button class="btn-secondary">Sign Up</button></li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="hero">
+        <div class="container">
+          <div class="hero__content">
+            <h1>More than just shorter links</h1>
+            <p>
+              Build your brand's recognition and get detailed insights on how
+              your links are performing.
+            </p>
+            <button class="btn-secondary">Get Started</button>
+          </div>
+          <div class="hero__image">
+            <img src="./images/illustration-working.svg" alt="hero image" />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section class="features">
+        <div class="container">
+          <form class="link-form" data-id="shortener">
+            <label for="link">
+              <input
+                data-id="link-input"
+                type="text"
+                placeholder="Shorten a link here..."
+              />
+              <small data-id="error-message">Please add a link</small>
+            </label>
+            <button type="submit" class="btn-secondary">Shorten it!</button>
+          </form>
+
+          <div class="copied-links">
+            <!-- template for link card -->
+            <!-- <div class=" link">
+              <p class="original-link">Original Link</p>
+
+              <div>
+                <p class="short-link">Short Link</p>
+                <button class="btn-secondary">Copy</button>
+              </div>
+            </div> -->
+          </div>
+
+          <div class="details">
+            <div class="detail__heading">
+              <h2>Advanced Statistics</h2>
+              <p>
+                Track how your links are performing across the web with our
+                advanced statistics dashboard
+              </p>
+            </div>
+
+            <div class="detail__grid">
+              <div class="card">
+                <img src="./images/icon-brand-recognition.svg" alt="icons" />
+
+                <h3>Brand Recognition</h3>
+                <p>
+                  Boost your brand recognition with each click. Generic links
+                  don’t mean a thing. Branded links help instil confidence in
+                  your content.
+                </p>
+              </div>
+              <div class="card">
+                <img src="images/icon-detailed-records.svg" alt="icons" />
+
+                <h3>Detailed Records</h3>
+                <p>
+                  Gain insights into who is clicking your links. Knowing when
+                  and where people engage with your content helps inform better
+                  decisions.
+                </p>
+              </div>
+              <div class="card">
+                <img src="./images/icon-fully-customizable.svg" alt="icons" />
+
+                <h3>Fully Customizable</h3>
+                <p>
+                  Improve brand awareness and content discoverability through
+                  customizable links, supercharging audience engagement.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="boost">
+        <div class="container">
+          <h2>Boost your links today</h2>
+          <button class="btn-secondary">Get Started</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <nav class="container footer-grid">
+        <a href="/">
+          <img class="brand-logo" src="./images/logo-light.svg" alt="Brand Logo" />
+        </a>
+
+        <div class="features-links">
+          <h4>Features</h4>
+
+          <ul>
+            <li><a href="#">Link Shortening</a></li>
+            <li><a href="#">Branded Links</a></li>
+            <li><a href="#">Analytics</a></li>
+          </ul>
+        </div>
+
+        <div class="resources-links">
+          <h4>Resources</h4>
+
+          <ul>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Developers</a></li>
+            <li><a href="#">Support</a></li>
+          </ul>
+        </div>
+
+        <div class="company-links">
+          <h4>Company</h4>
+
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Our team</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <ul class="social-links flex">
+          <li>
+            <a href="#"
+              ><img src="./images/icon-facebook.svg" alt="icon-facebook"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-instagram.svg" alt="icon-instagram"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-pinterest.svg" alt="icon-pinterest"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="./images/icon-twitter.svg" alt="icon-twitter"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>
